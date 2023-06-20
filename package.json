@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "dotenv-vault": "^1.23.3"
+  }
+}
