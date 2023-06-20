@@ -1,9 +1,9 @@
 # Learn Dotenv Vault
 
-이 레포지토리는 dotenv-org/dotenv-vault 의 기능성과 적용 가능성 실험을 위해 만들어졌습니다. dotenv-vault는 팀 내 시크릿은 `DOTENV_KEY` 하나만을 두고, 나머지 정보는 모두 `.env.vault` 파일에 암호화해 저장하고 커밋하는 방식으로 운영합니다.
+이 레포지토리는 [dotenv-org/dotenv-vault](https://github.com/dotenv-org/dotenv-vault)의 기능성과 적용 가능성 실험을 위해 만들어졌습니다. dotenv-vault는 팀 내 시크릿은 `DOTENV_KEY` 하나만을 두고, 나머지 정보는 모두 `.env.vault` 파일에 암호화해 저장하고 커밋하는 방식으로 운영합니다.
 
 ## 파일
-- `config-dotenv-vault.js`: `node`를 실행할 `-r` 플래그로 `require`해서 `.env.vault`를 해석해 `process.env`에 설정하는 역할을 합니다.
+- `config-dotenv-vault.js`: `node`를 실행할 때 `-r` 플래그로 `require`해서 `.env.vault`를 해석해 `process.env`에 설정하는 역할을 합니다.
 - `main.js`: 설정된 환경 변수를 갖고 실행될 파일입니다. 실제 상황이라면 서버 등의 엔트리일 것입니다.
 
 ## 실험 방법
